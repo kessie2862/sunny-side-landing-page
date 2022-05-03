@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "top-left top-right"
+    "middle-left middle-right"
+    "bottom-left bottom-right";
+}
+
+.top-left {
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  grid-area: top-left;
+}
+
+.top-left .content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 125px 0;
+}
+
+.top-left .content h1 {
+  margin-bottom: 20px;
+}
+
+.top-left .content p {
+  line-height: 1.3;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.top-left .content a {
+  /* text-decoration: none; */
+  text-decoration: wavy;
+  text-decoration-color: rgb(210, 207, 41);
+  text-decoration-thickness: 2px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: rgb(26, 24, 24);
+  font-weight: bolder;
+}
+
+.top-right {
+  background: url(./images//desktop/image-transform.jpg);
+  background-position: center top;
+  min-height: 450px;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  grid-area: top-right;
+}
+
+.middle-left {
+  background: url(./images/desktop/image-stand-out.jpg);
+  background-position: center top;
+  min-height: 450px;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  grid-area: middle-left;
+}
+
+.middle-right {
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  grid-area: middle-right;
+}
+
+.middle-right .content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 125px 0;
+}
+
+.middle-right .content h1 {
+  margin-bottom: 20px;
+}
+
+.middle-right .content p {
+  line-height: 1.3;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.middle-right .content a {
+  text-decoration: wavy;
+  text-decoration-color: rgb(210, 207, 41);
+  text-decoration-thickness: 2px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: rgb(26, 24, 24);
+  font-weight: bolder;
+}
+
+.bottom-left {
+  background: url(./images/desktop/image-graphic-design.jpg);
+  background-position: center top;
+  min-height: 450px;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  grid-area: bottom-left;
+}
+
+.bottom-left .content,
+.bottom-right .content {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.bottom-left .content h1 {
+  margin-bottom: 16px;
+  color: #1f5146;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.bottom-left .content p {
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #1f5146;
+  font-weight: bold;
+}
+
+.bottom-right {
+  background: url(./images/desktop/image-photography.jpg);
+  background-position: center top;
+  min-height: 450px;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  grid-area: bottom-right;
+}
+
+.bottom-right .content h1 {
+  margin-bottom: 16px;
+  color: #16526c;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.bottom-right .content p {
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #16526c;
+  font-weight: bold;
+}
+
+.testimonial {
+  background-color: #fff;
+}
+
+.testimonial h1 {
+  font-size: 1em;
+  text-align: center;
+  margin: 50px 0 20px 0;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.clients {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "left-client middle-client right-client";
+  height: 400px;
+}
+
+.left-client {
+  grid-area: left-client;
+  height: auto;
+}
+
+.left-client-info,
+.middle-client-info,
+.right-client-info {
+  margin: 1px auto;
+  padding: 40px;
+  width: 100%;
+}
+
+.left-client-info img,
+.middle-client-info img,
+.right-client-info img {
+  width: 50px;
+  border-radius: 50px;
+  margin: 0 auto 50px;
+  display: block;
+}
+
+.left-client-info .info,
+.middle-client-info .info,
+.right-client-info .info {
+  text-align: center;
+  margin: 0 auto 50px;
+  line-height: 1.3;
+}
+
+.left-client-info h4,
+.middle-client-info h4,
+.right-client-info h4 {
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+.left-client-info .position,
+.middle-client-info .position,
+.right-client-info .position {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.middle-client {
+  grid-area: middle-client;
+  height: auto;
+}
+
+.right-client {
+  grid-area: right-client;
+  height: auto;
+}
+
+.grid-images {
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "img1 img2 img3 img4";
+  background-color: red;
+}
+
+.img1 {
+  grid-area: img1;
+  background: url(./images/mobile/image-gallery-milkbottles.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.img2 {
+  grid-area: img2;
+  background: url(./images/mobile/image-gallery-orange.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.img3 {
+  grid-area: img3;
+  background: url(./images/mobile/image-gallery-cone.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.img4 {
+  grid-area: img4;
+  background: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+footer {
+  background-color: #90d4c5;
+  width: 100%;
+  height: 250px;
+}
+
+footer .footer-header {
+  text-align: center;
+  color: #30766b;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer .footer-links {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer .footer-links a {
+  padding-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #30766b;
+}
+
+footer .footer-links a:hover {
+  color: #ffffff;
+}
+
+footer .footer-icons {
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .footer-icons img {
+  padding-right: 30px;
+}
+
+footer .footer-icons img:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top-right"
+      "top-left"
+      "middle-left"
+      "middle-right"
+      "bottom-left"
+      "bottom-right";
+  }
+
+  .bottom-left .content,
+  .bottom-right .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .clients {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left-client"
+      "middle-client"
+      "right-client";
+  }
+
+  .grid-images {
+    margin-top: 500px;
+    padding-top: 50px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "img1 img2"
+      "img3 img4";
+  }
+}
+
+@media (max-width: 450px) {
+  .grid-images {
+    padding-top: 100px;
+  }
+}

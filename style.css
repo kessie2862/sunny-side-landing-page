@@ -20,7 +20,11 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
 
 .nav-bar {
@@ -59,12 +63,14 @@ nav ul li a.btn:hover {
   text-align: center;
   padding-top: 15vh;
 }
+
 .hero h1 {
-  font-size: 56px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 6px;
-  padding-bottom: 10vh;
+  margin-bottom: 10px;
+  font-family: "Fraunces", serif;
 }
 
 .hamburger {
@@ -107,6 +113,7 @@ nav ul li a.btn:hover {
   line-height: 1.3;
   margin-bottom: 20px;
   opacity: 0.5;
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .top-left .content a {
@@ -117,7 +124,7 @@ nav ul li a.btn:hover {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: rgb(26, 24, 24);
-  font-weight: bolder;
+  font-family: "Fraunces", serif;
 }
 
 .top-right {
@@ -168,16 +175,17 @@ nav ul li a.btn:hover {
   line-height: 1.3;
   margin-bottom: 20px;
   opacity: 0.5;
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .middle-right .content a {
   text-decoration: wavy;
-  text-decoration-color: rgb(210, 207, 41);
+  text-decoration-color: #ff7465;
   text-decoration-thickness: 2px;
   text-decoration-line: underline;
   text-transform: uppercase;
   color: rgb(26, 24, 24);
-  font-weight: bolder;
+  font-family: "Fraunces", serif;
 }
 
 .bottom-left {
@@ -212,7 +220,7 @@ nav ul li a.btn:hover {
   line-height: 1.3;
   margin-bottom: 20px;
   color: #1f5146;
-  font-weight: bold;
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .bottom-right {
@@ -240,7 +248,7 @@ nav ul li a.btn:hover {
   line-height: 1.3;
   margin-bottom: 20px;
   color: #16526c;
-  font-weight: bold;
+  font-family: "Oleo Script Swash Caps", cursive;
 }
 /* Section Ends */
 
@@ -292,6 +300,8 @@ nav ul li a.btn:hover {
   text-align: center;
   margin: 0 auto 50px;
   line-height: 1.3;
+  font-family: "Slabo 27px", serif;
+  opacity: 0.7;
 }
 
 .left-client-info h4,
@@ -396,6 +406,7 @@ footer .footer-header {
   color: #30766b;
   padding-top: 30px;
   padding-bottom: 20px;
+  font-family: "Bree Serif", serif;
 }
 
 footer .footer-links {
@@ -409,6 +420,7 @@ footer .footer-links a {
   text-decoration: none;
   font-weight: bold;
   color: #30766b;
+  font-family: "Barlow", sans-serif;
 }
 
 footer .footer-links a:hover {
@@ -429,6 +441,24 @@ footer .footer-icons img:hover {
   cursor: pointer;
 }
 /* Footer Ends */
+
+/* Media Queries Starts */
+
+@media screen and (min-width: 601px) and (max-width: 765px) {
+  nav ul li a {
+    padding-right: 2px;
+    font-size: 13px;
+  }
+  nav ul li a.btn {
+    padding: 12px 19px;
+    font-size: 10px;
+  }
+  nav ul li a.btn:hover {
+    color: #fff;
+    background-color: #5dad2b;
+  }
+}
+
 @media (max-width: 600px) {
   .hamburger {
     display: inline-block;

@@ -49,9 +49,9 @@ nav ul li a.btn {
   font-family: "Fraunces", serif;
   color: black;
   background-color: white;
-  padding: 14px 25px;
+  padding: 11px 20px;
   border-radius: 35px;
-  font-size: 14px;
+  font-size: 12px;
   transition: all 0.2s ease;
 }
 nav ul li a.btn:hover {

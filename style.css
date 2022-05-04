@@ -117,7 +117,6 @@ nav ul li a.btn:hover {
 }
 
 .top-left .content a {
-  /* text-decoration: none; */
   text-decoration: wavy;
   text-decoration-color: rgb(210, 207, 41);
   text-decoration-thickness: 2px;
@@ -341,13 +340,13 @@ nav ul li a.btn:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "img1 img2 img3 img4";
-  background-color: red;
+  height: 300px;
 }
 
 .img1 {
   grid-area: img1;
   background: url(./images/mobile/image-gallery-milkbottles.jpg);
-  min-height: 400px;
+  /* min-height: 400px; */
   background-size: cover;
   background-position: center;
   display: block;
@@ -359,7 +358,7 @@ nav ul li a.btn:hover {
 .img2 {
   grid-area: img2;
   background: url(./images/mobile/image-gallery-orange.jpg);
-  min-height: 400px;
+  /* min-height: 400px; */
   background-size: cover;
   background-position: center;
   display: block;
@@ -371,7 +370,7 @@ nav ul li a.btn:hover {
 .img3 {
   grid-area: img3;
   background: url(./images/mobile/image-gallery-cone.jpg);
-  min-height: 400px;
+  /* min-height: 400px; */
   background-size: cover;
   background-position: center;
   display: block;
@@ -383,7 +382,7 @@ nav ul li a.btn:hover {
 .img4 {
   grid-area: img4;
   background: url(./images/mobile/image-gallery-sugar-cubes.jpg);
-  min-height: 400px;
+  height: auto;
   background-size: cover;
   background-position: center;
   display: block;
@@ -522,6 +521,7 @@ footer .footer-icons img:hover {
     grid-template-areas:
       "img1 img2"
       "img3 img4";
+    height: 500px;
   }
 }
 

@@ -500,6 +500,10 @@ footer .footer-icons img:hover {
     margin: 0 auto;
   }
 
+  .bottom-left .content h1 {
+    text-align: left;
+  }
+
   .clients {
     display: grid;
     grid-template-columns: 1fr;

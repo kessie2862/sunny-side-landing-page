@@ -496,11 +496,12 @@ footer .footer-icons img:hover {
 
   .bottom-left .content,
   .bottom-right .content {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
-  .bottom-left .content h1 {
+  .bottom-left .content h1,
+  .bottom-right .content h1 {
     text-align: left;
   }
 
